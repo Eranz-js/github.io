@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gav MRJ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f9f9f9, #d7e1ec);
+      padding: 40px;
+      color: #2c3e50;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    h2 {
+      margin-bottom: 10px;
+      color: #1e40af;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    button {
+      background-color: #1e40af;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #3744b3;
+    }
+    .output {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #0f5132;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Halo, Saya Maruanaja 👋</h1>
+
+    <div class="card">
+      <h2>👤 Data Diri</h2>
+      <p><strong>Nama:</strong> Gavrie Maruanaja</p>
+      <p><strong>Email:</strong> gavrie@example.com</p>
+      <p><strong>Asal:</strong> Ambon, Maluku</p>
+    </div>
+
+    <div class="card">
+      <h2>🎯 Hobi</h2>
+      <ul>
+        <li>Musik</li>
+        <li>Dance</li>
+        <li>Ngoding</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>💡 Skill</h2>
+      <ul>
+        <li>HTML, CSS, JS</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🔘 Interaksi JavaScript</h2>
+      <p>Klik tombol di bawah untuk menyapa:</p>
+      <button onclick="sayHello()">Sapa Saya!</button>
+      <p class="output" id="greeting"></p>
+    </div>
+  </div>
+
+  <script>
+    function sayHello() {
+      const name = "Gavrie MRJ";
+      document.getElementById("greeting").textContent = "Halo, terima kasih sudah mengunjungi situs saya, saya " + name + " 🙌";
+    }
+  </script>
+</body>
+</html>
